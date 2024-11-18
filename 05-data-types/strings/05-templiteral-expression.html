@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Including expressions in template literals</title>
+</head>
+<body>
+    <h1>Including expressions in template literals in our string</h1>
+    <script>
+        let course = "psychology";
+        let score = 78;
+        let maxPoints = 100;
+        //template literals respect line breaks hence can be typed as below.
+        let message = `I really enjoyed the ${course} course. 
+        I got ${score/maxPoints * 100}% in the exam`; 
+        console.log(message);
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extracting String Parts | substr()</title>
+</head>
+<body>
+    <h1><i>substr()</i>: the second parameter is the length of the extracted part</h1>
+    <script>
+        let str = "Apple, Banana, Kiwi"
+        let part = str.substr(7, 6);
+        console.log(part);
+         //if second parameter is omitted substr() will slice out the rest of the string
+        let part1 = str.substr(7);
+        console.log(part1);
+         // If first parameter is negagtive, the position counts from the end of the string
+         let part2 = str.substr(-4);
+         console.log(part2);
+    </script>
+</body>
+</html>

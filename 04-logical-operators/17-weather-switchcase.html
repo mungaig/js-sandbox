@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Advisory</title>
+</head>
+<body>
+    <h1>Weather Advisory using switch statements</h1>
+
+    <label for="weather">Select the weather type today:</label>
+    <select name="weather" id="weather">
+        <option value="">--Make a choice--</option>
+        <option value="sunny">Sunny</option>
+        <option value="rainy">Rainy</option>
+        <option value="snowing">Snowing</option>
+        <option value="overcast">Overcast</option>
+    </select>
+
+    <p></p>
+
+    <script>
+        const select = document.querySelector('select');
+        const para = document.querySelector('p');
+
+        select.onchange = setWeather;
+
+        function setWeather(){
+            const choice = select.value;
+
+            switch(choice){
+                case 'sunny':
+                    para.textContent = 'It is nice and sunny outside today';
+                break;
+                case 'rainy':
+                    para.textContent = 'Its raining today, carry an umbrella';
+                break;
+                case 'snowing':
+                    para.textContent = 'There is snow today, dress in warm clothes';
+                break;
+                case 'overcast':
+                    para.textContent = 'The sky is grey and dark, it could rain';
+                break;
+                default:
+                    para.textContent = '';
+            }
+        }
+    </script>
+</body>
+</html>

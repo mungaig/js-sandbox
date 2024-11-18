@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passing more operands in OR</title>
+</head>
+<body>
+    <h1>Office hours</h1>
+    <p id="demo"></p>
+    <script>
+        let hour = 12;
+        let isWeekend = true;
+        let message;
+       
+        if(hour < 9 || hour > 18 || isWeekend){
+            message = "Office is closed"; //coz its the weekend
+        }
+        else{
+            message = "office is opened";
+        }
+        document.getElementById("demo").innerHTML = message;
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Padding</title>
+</head>
+<body>
+    <h1>String padding using <i>padStart()</i> and <i>padEnd()</i> methods</h1>
+    <script>
+        // padStart()
+
+        let text = "5";
+        let padded = text.padStart(4,"x");
+        console.log(padded);
+        // example 2
+        let text1 = "5";
+        let padded1 = text1.padStart(4,"0");
+        console.log(padded1);
+        // padStart() is a string method, to pad a number convert the number to a string first
+        let numb = 5;
+        let text2 = numb.toString();
+        let padded2 = text2.padStart(4," ");
+        console.log(padded2);
+
+        // padEnd()
+        let text3 = "7";
+        let padded3 = text3.padEnd(4,"x");
+        console.log(padded3);
+        // padEnd() is a string method, to pad a number convert the number to a string first
+        let numb1 = 7;
+        let text4 = numb1.toString();
+        let padded4 = text4.padEnd(4,"0");
+        console.log(padded4);
+
+    </script>
+</body>
+</html>

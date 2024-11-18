@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age range | Eligibility</title>
+</head>
+<body>
+    <h1>Eligibility Check</h1>
+    <p>Status: <span id="age"></span></p>
+
+    <script>
+        let currentUserAge = 5;
+        let isEligible;
+
+        if(currentUserAge >= 14 && currentUserAge <= 90){
+            isEligible = "Congratulations! You qualify";
+        }
+        else{
+            isEligible = "Sorry, you do not qualify";
+        }
+        document.getElementById("age").innerHTML = isEligible;
+    </script>
+</body>
+</html>

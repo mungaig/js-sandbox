@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitalize function</title>
+</head>
+<body>
+    <h1>Capitalize a word</h1>
+    <script>
+        function capitalize(word){
+            let small = word.toLowerCase(); //convert the string to lowercase
+            let firstLetter = small.charAt(0);  //user charAt(0) to select the first letter of the word
+            let capWord = firstLetter.toUpperCase() + small.slice(1); //concatenate the capitalized first letter of the word with the rest of the string 
+            alert(capWord);
+        }
+
+        let myWord = prompt('Enter a word','');
+        capitalize(myWord);
+    </script>
+</body>
+</html>

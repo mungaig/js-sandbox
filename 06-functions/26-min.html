@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return the minimum of two numbers</title>
+</head>
+<body>
+    <h1>Return the minimum of two numbers</h1>
+    <script>
+        function min(a, b){
+            if (a < b){
+                return a;
+            }else {
+                return b;
+            }
+        }
+
+        let num1 = prompt('enter a number', '');
+        let num2 = prompt('enter a second number', '');
+        alert('the smallest of the two numbers is: ' + min(num1, num2));
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Cut-off mark</title>
+</head>
+<body>
+    <h1>Cut-off points app</h1>
+    <script>
+        function checkPoints(points){
+            if (points >= 67){
+                alert('Congrations! You are qualified to enroll')
+            }else {
+                alert('Failed! Better luck next time');
+            }
+        }
+
+        let points = prompt('What was your score: ','');
+
+        checkPoints(points);
+
+    </script>
+</body>
+</html>

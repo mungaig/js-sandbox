@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AND && rules</title>
+</head>
+<body>
+    <h1>AND rules &&</h1>
+    <h2>AND "&&" finds the first falsy value</h2>
+    <ul>
+        <li>Evaluates operands from left to right.</li>
+        <li>For each operand, converts it to a boolean. If the result is false, stops and returns the original value of that operand.</li>
+        <li>If all operands have been evaluated (i.e. all were truthy), returns the last operand.
+        </li>
+
+        <p>AND returns the first falsy value while OR returns the first truthy one</p>
+        <p>The precedence of AND && is higher than OR ||</p>
+
+        <script>
+            // if the first operand is truthy, AND returns the second operand:
+            console.log(1 && 0); //0
+            console.log(1 && 5); //5
+
+            //if the first operand is falsy, AND returns it. The second is ignored:
+            console.log(null && 5); //null
+            console.log(0 && "anything") //0
+
+            // passing more operands/values - will return first falsy
+            console.log(1 && 2 && null && 6); //null
+            
+            //when all values are truthy, the last value is returned
+            console.log(1 && 2 && 8); //8
+        </script>
+    </ul>
+</body>
+</html>

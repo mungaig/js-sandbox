@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standard for loop example</title>
+</head>
+<body>
+    <h1>Standard for loop</h1>
+    <p id="para"></p>
+    <script>
+        const presCandidates = ['Raila','Ruto','Wajackoya','Mwaure'];
+        let statement = 'The 4 presidential candidates are ';
+        for(let i = 0; i < presCandidates.length; i++){
+            if(i === presCandidates.length - 1){
+                statement += ` and ${presCandidates[i]}.`;
+            } else if(i === 0) {
+                statement += presCandidates[i];
+            } else {
+                statement += `, ${presCandidates[i]}`;
+            }
+        }
+        document.getElementById('para').innerHTML = statement;
+    </script>
+</body>
+</html>

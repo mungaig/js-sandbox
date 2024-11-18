@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extracting Sting Parts | Slice()</title>
+</head>
+<body>
+    <h1><i>Slice()</i> extracts part of a string and returns the extracted part in a new string</h1>
+    <script>
+        // slice out a portion of a string from position 7 to position 13 (13 not included)
+        let str = "Apple, Banana, Kiwi";
+        let part = str.slice(7, 13);
+        console.log(part);
+        //If a parameter is negative, the position is counted from the end of the string.
+        let part1 = str.slice(-12, -6);
+        console.log(part1);
+        //If you omit the second parameter, the method will slice out the rest of the string: output: Banana, Kiwi
+        let part2 = str.slice(7);
+        console.log(part2);
+        // counting from the end. Output Banana, Kiwi
+        let part3 = str.slice(-12);
+        console.log(part3);
+    </script>
+</body>
+</html>

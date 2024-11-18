@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting first truthy value from a list</title>
+</head>
+<body>
+    <h1>Developer login</h1>
+    <p>You are logged in as: <span id="name"></span></p>
+    
+    <script>
+        let firstName = "";
+        let lastName = "";
+        let nickName = "Geoff";
+        let displayName;
+
+        displayName = firstName || lastName || nickName || "Anonymous"; //Geoff - if all operands were false it would have returned "Anonymous"
+
+        document.getElementById("name").innerHTML = displayName;            
+    </script>
+</body>
+</html>

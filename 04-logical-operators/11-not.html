@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>! (NOT) logical operator</title>
+</head>
+<body>
+    <h1>Logical !(NOT)</h1>
+    <p>The precedence of NOT! is the highest of all logical operators, it executes first before && or ||</p>
+    <script>
+        console.log(!true); //false
+        console.log(!0);    //true
+
+        // double NOT!! is sometimes used for converting a value to a boolean type
+        console.log(!!"non-empty string"); //true
+        console.log(!!null); //false
+
+        //supposed to be same as
+        console.log(Boolean("not empty string"));   //true
+        console.log(Boolean(null))  //false
+    </script>
+</body>
+</html>

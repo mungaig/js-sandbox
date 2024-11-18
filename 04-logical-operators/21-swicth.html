@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch statement</title>
+</head>
+<body>
+    <h1>switch statement</h1>
+    <p>Its a type of conditional statement that evaluates an expression against multiple possible cases and executes one or more blocks of code based on matching cases.</p>
+
+    <p>Getting the day of the week message</p>
+    <script>
+        const day = new Date().getDay();
+
+        switch(day){
+            case 0:
+                console.log("Its Sunday! Go to church.");
+            break;
+            case 1:
+                console.log("Monday blues");
+            break;
+            case 2:
+                console.log("Titty Tuesday");
+            break;
+            case 3:
+                console.log("Motivational Wednesday");
+            break;
+            case 4:
+                console.log("Throw back Thursday");
+            break;
+            case 5:
+                console.log("Its Furahiday!!!");
+            break;
+            case 6:
+                console.log("Its Saturday! Have fun");
+            break;
+            default:
+                console.log("the end of time");
+        }
+    </script>
+</body>
+</html>

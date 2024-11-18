@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions copy</title>
+</head>
+<body>
+    <h1>Copy function to another variable</h1>    </h1>
+    <script>
+        function sayHi(){    //function declaration created the function and puts it into the variable name sayHi
+            alert('hello');
+        }
+
+        let func = sayHi; //copies it into the variable func
+        
+        func(); //both run the same
+        sayHi();
+    </script>
+</body>
+</html>

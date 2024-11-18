@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps</title>
+</head>
+<body>
+   <h1>Using maps()</h1> 
+   <p>Here we pass a function into cats.map(), and map() calls the function once for each item in the array, passing in the item. It then adds the return value from each function call to a new array, and finally returns the new array. In this case the function we provide converts the item to uppercase, so the resulting array contains all our cats in uppercase:</p>
+   <p id="demo"></p>
+   <script>
+        function toUpper(string){
+            return string.toUpperCase();
+        }
+
+        const animals = ['hyena','lion','buffalo','elephant','cow'];
+        const upperAnimals = animals.map(toUpper);
+        //shows upperAnimals is an array
+        console.log(Array.isArray(upperAnimals));
+        console.log(upperAnimals instanceof Array);
+
+        document.getElementById('demo').innerHTML = upperAnimals;
+   </script>
+</body>
+</html>

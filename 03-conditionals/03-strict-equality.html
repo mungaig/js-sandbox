@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strict equality</title>
+</head>
+<body>
+    <h1>Why we use strict equality (===) instead of (==)  </h1>
+    <script>
+        // a regular equality check == has a problem.It cannot differentiate 0 from false.
+        console.log(0 == false); //true
+        console.log(""==false); //true
+        //this happens because operands of different types are converted to numbers by the equality operator ==
+        
+        // strict equality (===): checks the equality without type conversion.
+
+
+        console.log(0 === false);  //false
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+functions are reusable blocks of code
+functions that are part of objects are called methods
+Some functions require parameters to be specified when you are invoking them also known as arguments, properties or even attributes.
+When you need to specify multiple parameters, they are separated by commas.
+We declare functions listing their parameters, then call them passing arguments.
+Functions are actions. So their name is usually a verb. It should be brief, as accurate as possible and describe what the function does.
+A function is a value, so we can deal with it as a value.
+A function is a value representing an action.
+Regular values like strings or numbers represent the data
+We can pass a function between variables and run when we want.

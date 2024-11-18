@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default parameters</title>
+</head>
+<body>
+    <h1>Default parameters</h1>
+    <p>If you're writing a function and want to support optional parameters, you can specify default values by adding = after the name of the parameter, followed by the default value.</p>
+    <script>
+        function career(name = 'an IT Specialist'){ //default parameter provided
+            console.log(`I am ${name}`);
+            }
+        //when an argument is provided in the call
+        career('a Software Engineer');
+        //will return default parameter
+        career();
+    </script>
+</body>
+</html>

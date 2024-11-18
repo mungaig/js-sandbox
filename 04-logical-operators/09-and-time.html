@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time teller</title>
+</head>
+<body>
+    <h1>time teller</h1>
+    <p>The time is: <span id="time"></span></p>
+    
+    <script>
+        let hour = 9;
+        let minute = 56;
+        let displayTime;
+
+        if (hour == 9 && minute == 56){
+            displayTime = "9:56 Am";
+        }
+        document.getElementById("time").innerHTML = displayTime;
+    </script>
+</body>
+</html>

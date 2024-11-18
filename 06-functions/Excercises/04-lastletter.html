@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last Letter</title>
+</head>
+<body>
+    <h1>Return last letter</h1>
+    <script>
+        function lastLetter(word){
+            let stringLength = word.length;
+            let letter = word.charAt(stringLength - 1);
+            alert('the last letter is: ' + letter);
+        }
+
+        let word = prompt('Enter a word','');
+        lastLetter(word);
+    </script>
+</body>
+</html>

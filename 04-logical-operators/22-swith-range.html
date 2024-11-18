@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Ranges</title>
+</head>
+<body>
+    <h1>Switch Ranges</h1>
+    <p>Grade scoring app</p>
+
+    <script>
+        const grade = 75;
+
+        switch(true){
+            case grade >= 70:
+                console.log('A');
+            break;
+            case grade >= 60:
+                console.log('B');
+            break;
+            case grade >= 50:
+                console.log('C');
+            break;
+            case grade >= 40:
+                console.log('D')
+            break;
+            default:
+                console.log('F')
+        }
+    </script>
+</body>
+</html>

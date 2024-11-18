@@ -1,0 +1,13 @@
+Rules:
+- Revise logic before coding
+    - flow diagrams 
+    - pseudo-code
+- Clearly expose the structure of the page
+    - main containers with a representative ID
+- Use correct indentation
+- Use comments wisely
+- Avoid extremely large functions
+- Use naming standards for functions and variables
+- Treat changes with caution
+- Avoid indiscriminate mixing of coding languages
+- Summarize your imports

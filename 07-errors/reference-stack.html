@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReferenceError Stack</title>
+</head>
+<body>
+    <h1>ReferenceError stack</h1>
+    <script>
+        let a = 5;
+        let b = 6;
+
+        function add(){
+            // c = a + b;
+            return c;
+        }
+        
+        function print(){
+            add();
+        }
+
+        print();
+    </script>
+</body>
+</html>

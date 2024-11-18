@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arguments object</title>
+</head>
+<body>
+    <h1>arguments is an Array-like object accessible inside functions that contains the values of the arguments passed to that function.</h1>
+    <script>
+        function myFun(a, b, c){
+            console.log(arguments[0]); //5
+            console.log(arguments[1]); //7
+            console.log(arguments[2]); //9
+        }
+
+        myFun(5, 7, 9);
+    </script>
+</body>
+</html>

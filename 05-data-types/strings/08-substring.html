@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extracting String Parts | substring()</title>
+</head>
+<body>
+    <h1>Start and end values less than 0 are treated as 0</h1>
+    <p><i>substring()</i> is similar to <i>slice()</i></p>
+    <script>
+        let str = "Apples, Banana, Kiwi";
+        // its like it starts counting from index 1
+        let part = str.substring(8, 14);
+        console.log(part);
+        // substring() will slice out the rest of the string if the second paramemter is omitted
+        let part1 = str.substring(8);
+        console.log(part1);
+    </script>
+</body>
+</html>

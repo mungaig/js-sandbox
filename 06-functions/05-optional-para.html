@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optional Parameters</title>
+</head>
+<body>
+    <h1>Optional parameters</h1>
+    <p>When parameters are not specified, the funtion adopts some default behavior</p>
+    <script>
+        let myArray = ['I', 'am', 'so', 'blessed'];
+        //with parameters
+        let punctuated = myArray.join(' ');
+        console.log(punctuated);
+
+        //without parameters
+        let theDefault = myArray.join();
+        console.log(theDefault);
+    </script>
+</body>
+</html>

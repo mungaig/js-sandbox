@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Function | Example</title>
+</head>
+<body>
+    <h1>Immediately invoked</h1>
+    <script>
+        let person = {
+            firstName: 'Geoffrey',
+            secondName: 'Mungai'
+            };
+
+            (function(){
+                console.log(person.firstName + ' ' + person.secondName)
+            })(person)
+    </script>
+</body>
+</html>

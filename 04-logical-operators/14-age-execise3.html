@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eligibility test OR||</title>
+</head>
+<body>
+    <h1>Eligibility Range using OR ||</h1>
+    <p>Status <span id="age"></span></p>
+
+    <script>
+        let currentUserAge = 29;
+        let eligible;
+
+        if(currentUserAge < 14 || currentUserAge > 90){
+            eligible = "Sorry, you are not qualified";
+        }
+        else{
+            eligible = "Congratulations! You are qualified";
+        }
+        document.getElementById("age").innerHTML = eligible;
+    </script>
+</body>
+</html>

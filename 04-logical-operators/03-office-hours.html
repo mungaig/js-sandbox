@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logical OR example</title>
+</head>
+<body>
+    <h2>Office hours teller</h2>
+    <p>This app tells us when the office is open</p>
+    <p id="demo"></p>
+    <script>
+        let time = new Date().getHours();
+        let notification;
+
+        if(time < 9 || time > 18){
+            notification = "Close: Office closed!";
+        }
+        else{
+            notification = "Open: Working hours";
+        }
+        document.getElementById("demo").innerHTML = notification;
+        console.log(time);
+    </script>
+</body>
+</html>
