@@ -12,7 +12,13 @@
     <p id="para"></p>
     <script>
         let str = 'GEOFFREY';
-        let arr = str.split('');
+        let arr = str.split(' ');
+        
+        //an array is a JavaScript object
+        console.log(typeof(arr));
+        //the below line proves that split() converted the string into an array object
+        console.log(Array.isArray(arr));
+
         document.querySelector('#para').textContent = arr;
     </script>
 </body>
