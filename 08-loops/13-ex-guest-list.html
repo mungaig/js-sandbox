@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping through an Array</title>
+</head>
+<body>
+    <h2>Looping through an array</h2>
+    <p id="admitted"></p>
+    <p id="refused"></p>
+
+    <script>
+        const guestNames = ['Alice','Lucy','Bolton','Elon','Timothy','Stacy','Marz'];
+
+        const admitted = document.querySelector('#admitted');
+        const refused = document.querySelector('#refused');
+        admitted.textContent = 'Admit: ';
+        refused.textContent = 'Refuse: ';
+
+        for(let i = 0; i < guestNames.length; i++){
+            if(guestNames[i] === 'Bolton' || guestNames[i] === 'Timothy'){
+                refused.textContent += ` ${guestNames[i]},`;
+            } else {
+                admitted.textContent += ` ${guestNames[i]},`;
+            }
+        }
+    
+    </script>
+</body>
+</html>
