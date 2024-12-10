@@ -25,7 +25,8 @@
                 admitted.textContent += ` ${guestNames[i]},`;
             }
         }
-    
+       admitted.textContent = admitted.textContent.slice(0, admitted.textContent.length - 2) + '.';
+       refused.textContent = refused.textContent.slice(0, refused.textContent.length - 2) + '.';
     </script>
 </body>
 </html>
