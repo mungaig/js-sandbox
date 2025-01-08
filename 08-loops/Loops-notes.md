@@ -11,3 +11,5 @@ let i = 0;\
 for(;i< 5;){\
     i++;
 }
+- Normally a loop exits when it's condition becomes falsy.
+- We can force to exit the loop using 'break'.
