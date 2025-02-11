@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body>
+    <h2>Document Object Model</h2>
+    <div id="container">
+        <div class="display"></div>
+        <div class="controls"></div>
+    </div>
+
+    <script>
+        const container = document.querySelector('#container');
+
+        //select the first child of #container
+        const display = container.firstElementChild;
+        console.log(display); //  <div class="display"></div>
+
+        //select the prior sibling of .controls
+        const controls = document.querySelector('.controls');
+        const display1 = controls.previousElementSibling;
+        console.log(display1); //  <div class="display"></div>
+    </script>
+</body>
+</html> 
