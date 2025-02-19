@@ -23,7 +23,7 @@ container.appendChild(headLine);
 //add another div
 const display = document.createElement('div');
 display.classList.toggle('display');
-display.setAttribute('style', 'border: solid 2px black; background: pink;');
+display.setAttribute('style', 'border: solid 2px black; background: pink;'); //inline style method 3
 
 //add h1 to display
 const bigText = document.createElement('h1');
