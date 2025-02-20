@@ -9,3 +9,4 @@ btn2.onclick = alertFunction;
 
 //Method 3
 const btn3 = document.querySelector('#btn3');
+btn3.addEventListener('click', alertFunction);
