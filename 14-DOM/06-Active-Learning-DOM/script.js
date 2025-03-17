@@ -22,8 +22,15 @@ const text = document.createTextNode(' - the premier source for web development 
 const linkPara = document.querySelector('p');
 linkPara.appendChild(text);
 
-//add some text to the paragraph - the below also works 
-//const linkPara = document.createTextNode(' - the premier source for web development knowledge.');
-//para.appendChild(linkPara);
+//move linkPara to the bottom of the section
+sect.appendChild(linkPara);
+ 
+//clone element - cloneNode() accepts a boolean argument
+const clone = linkPara.cloneNode(true);
+sect.appendChild(clone);
 
+//remove element
+sect.removeChild(clone);
 
+//you also write it as below
+//clone.remove();
