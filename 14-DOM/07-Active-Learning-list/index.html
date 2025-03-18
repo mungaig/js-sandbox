@@ -1,27 +1,16 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping list example</title>
-    <style>
-      li {
-        margin-bottom: 10px;
-      }
-
-      li button {
-        font-size: 12px;
-        margin-left: 20px;
-        color: #666;
-      }
-    </style>
+    <title>County list example</title>
   </head>
   <body>
 
-    <h1>My shopping list</h1>
+    <h1>Counties of Kenya</h1>
 
     <div>
-      <label for="item">Enter a new item:</label>
+      <label for="item">Enter a County:</label>
       <input type="text" name="item" id="item">
       <button>Add item</button>
     </div>
@@ -31,7 +20,32 @@
     </ul>
 
     <script>
+      const countyList = document.querySelector('ul');
+      const input = document.querySelector('input');
+      const btn = document.querySelector('button');
 
+      btn.addEventListener('click',() => {      
+        const county = input.value;
+        input.value = '';
+
+        const listItem = document.createElement('li');
+        const span = document.createElement('span');
+        const deleteBtn = document.createElement('button');
+
+        listItem.appendChild(span);
+        listItem.appendChild(deleteBtn);
+
+        span.textContent = county;
+        deleteBtn.textContent = 'Delete';
+
+        countyList.appendChild(listItem);
+
+        deleteBtn.addEventListener('click',() => {
+          listItem.remove();
+        });
+
+        input.focus(); 
+      });
     </script>
   </body>
 </html>
