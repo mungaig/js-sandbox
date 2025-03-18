@@ -32,5 +32,21 @@ sect.appendChild(clone);
 //remove element
 sect.removeChild(clone);
 
-//you also write it as below
+//you also write it as below:
 //clone.remove();
+
+//Manipulating styles
+//1. add inline styles directly onto elements using HTMLElement,style property
+para.style.color = 'yellow';
+para.style.backgroundColor = 'black';
+para.style.padding = '10px';
+para.style.width = '250px';
+para.style.textAlign = 'center';
+//Notice above JavaScript property versions of CSS styles are written in lower camel case not kebab-case in regular CSS
+
+const stylishP = document.createElement('p');
+stylishP.textContent = 'I\'m Stylish';
+sect.appendChild(stylishP);
+
+//Add css styles from external css file to stylishP
+stylishP.setAttribute('class','highlight');
