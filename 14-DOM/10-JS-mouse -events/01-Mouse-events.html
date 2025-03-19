@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Mouse events</title>
+</head>
+<body>
+    <h1>JavaScript mouse events</h1>
+    <button id="btn">Click me with any mouse button: left, right, middle...</button>
+    <p id="message"></p>
+
+    <script>
+        const btn = document.querySelector('#btn');
+
+        //disable context menu when right mouse is clicked
+        btn.addEventListener('context menu', (e) => {
+            e.preventDefault();
+        });
+
+        btn.addEventListener('mouseup', (e) =>{
+            const msg = document.querySelector('#message');
+            switch(e.button){
+                case 0:
+                    msg.textContent = 'You have clicked the left button';
+                break;
+                case 1:
+                    msg.textContent = 'You have clicked the middle/scroll button';
+                break;
+                case 2:
+                    msg.textContent = 'You have clicked the right button';
+                break;
+                default:
+                    msg.textContent = 'You have clicked an unknown button';
+            }
+        });
+
+    </script>
+</body>
+</html>

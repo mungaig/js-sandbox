@@ -22,7 +22,7 @@
 
         //beforeunload: fires up before the page and resources are unloaded
         addEventListener('beforeunload', (event) => {
-            //show the confirmation dialog
+            //show the confirmation dialog    ---very important
             event.preventDefault();
             //Chrome requires returnValue
             event.returnValue = '';
