@@ -4,6 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>County list example</title>
+    <style>
+      li {
+        margin-bottom: 10px;
+      }
+
+      li button {
+        font-size: 12px;
+        margin-left: 20px;
+        color: #666;
+      }
+    </style>
+    <!-- From: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/DOM_scripting#active_learning_a_dynamic_shopping_list -->
   </head>
   <body>
 
@@ -41,7 +53,8 @@
         countyList.appendChild(listItem);
 
         deleteBtn.addEventListener('click',() => {
-          listItem.remove();
+          //listItem.remove();     ----also works
+          countyList.removeChild(listItem);
         });
 
         input.focus(); 
