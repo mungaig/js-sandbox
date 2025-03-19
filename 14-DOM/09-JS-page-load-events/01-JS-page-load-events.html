@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript page load events</title>
+    <!-- From: https://www.javascripttutorial.net/javascript-dom/javascript-page-load-events/ -->
+</head>
+<body>
+    <h1>JS page load events</h1>
+
+    <script>
+        //DOMContentLoaded: browser fully loaded HTML and completed building DOM tree
+        addEventListener('DOMContentLoaded', (event) => {
+            console.log('The DOM is fully loaded');
+        });
+
+        //load: browser fully loaded HTML and external resources e.g images and stylesheets
+        addEventListener('load', (event) => {
+            console.log('The page is fully loaded');
+        });
+
+        //beforeunload: fires up before the page and resources are unloaded
+        addEventListener('beforeunload', (event) => {
+            //show the confirmation dialog
+            event.preventDefault();
+            //Chrome requires returnValue
+            event.returnValue = '';
+        });
+
+        //unload: fires when page is completely unloaded
+        addEventListener('unload', (event) => {
+            //send analytical data
+        });
+
+    </script>
+</body>
+</html>

@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stop propagation of an event</title>
+    <!-- From: https://www.javascripttutorial.net/javascript-dom/javascript-events/ -->
 </head>
 <body>
+    <h1>Stop propagation of an event</h1>
     <button id="btn">Click Me</button>
 
     <script>
         const btn = document.querySelector('#btn');
         btn.addEventListener('click', function(event){
             console.log('button has been clicked');
+            //if it's not for the line below, two messages would have been logged.
             event.stopPropagation();
         });
 
