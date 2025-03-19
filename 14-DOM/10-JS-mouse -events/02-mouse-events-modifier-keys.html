@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse clicks with modifier keys</title>
+</head>
+<body>
+    <h1>Mouse events with modifier keys (shift, alt, ctrl and meta(windows)</h1>
+    <button id="btn">Click me with any modifier key</button>
+    <p id="message"></p>
+
+    <script>
+        const btn = document.querySelector('#btn');
+
+        btn.addEventListener('click', (e) =>{
+            let keys = [];
+
+            if(e.shiftKey) keys.push('shift');
+            if(e.ctrlKey) keys.push('ctrl');
+            if(e.altKey) keys.push('alt');
+            if(e.metaKey) keys.push('meta');
+
+            const msg = document.querySelector('#message');
+            msg.textContent = `Keys: ${keys}`;
+        });
+    </script>
+</body>
+</html>

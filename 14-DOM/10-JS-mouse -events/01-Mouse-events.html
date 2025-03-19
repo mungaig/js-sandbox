@@ -20,6 +20,7 @@
 
         btn.addEventListener('mouseup', (e) =>{
             const msg = document.querySelector('#message');
+            //button is a property of the mouse event handler
             switch(e.button){
                 case 0:
                     msg.textContent = 'You have clicked the left button';
