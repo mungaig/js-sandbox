@@ -4,4 +4,8 @@ When you interact with the keyboard, the keyboard events are fired. There are th
 
 - keydown – fires when you press a key on the keyboard and fires repeatedly while you’re holding down the key.
 - keyup – fires when you release a key on the keyboard.
-- keypress – fires when you press a character keyboard like a,b, or c, not the left arrow key, home, or end keyboard, … The keypress also fires repeatedly while you hold down the key on the keyboard.
+- keypress – fires when you press a character keyboard like a,b, or c, not the left arrow key, home, or end keyboard, … The keypress also fires repeatedly while you hold down the key on the keyboard.Summary
+
+When you press a character key on the keyboard, the keydown, keypress, and keyup events are fired sequentially. However, if you press a non-character key, only the keydown and keyup events are fired.
+The keyboard event object has two important properties: key and code  properties that allow you to detect which key has been pressed.
+The key property returns the value of the key pressed while the code represents a physical key on the keyboard.
