@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS mouse location demo</title>
+    <style>
+        #area {
+            background-color: orange;
+            width: 400px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Get mouse location/coordinates on the screen</h1>
+    <div id="area"></div>
+    <p id="log"></p>
+
+    <script>
+        const area = document.querySelector('#area');
+        
+        area.addEventListener('mousemove', (e) => {
+            const log = document.querySelector('#log');
+            log.innerText = `
+            Screen X/Y: ${e.screenX}, ${e.screenY}
+            Client X/Y: ${e.clientX}, ${e.clientY}`;
+        });
+    </script>
+</body>
+</html>
