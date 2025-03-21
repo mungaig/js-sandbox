@@ -4,7 +4,7 @@ const menu = document.querySelector('#menu');
 
 menu.addEventListener('click', (e) => {
     const feedback = document.querySelector('#feedback');
-
+    //using the target property of the event
     const target = e.target;
 
     switch(target.id){
