@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check for Property Existence in an Object</title>
+</head>
+<body>
+    <h1>Property existence <i>'in'</i></h1>
+    <script>
+        let laptop = {
+            brand: 'tecno',
+            RAM: '16GB',
+            'screen size': 15.6,
+            price: 49999,
+        };
+
+        //using undefined
+        console.log(laptop.storage === undefined); //true since storage is not a property of the laptop object
+
+        //using in - key in object
+        console.log('brand' in laptop); //true
+        console.log('processor' in laptop); //false
+    </script>
+</body>
+</html>

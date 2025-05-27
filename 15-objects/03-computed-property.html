@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computed property example</title>
+</head>
+<body>
+    <h1>Objects: Computed property</h1>
+    <script>
+        let brand = prompt('Enter the mobile phone brand:','tecno');
+
+        const sales = {
+            [brand]: 20,
+        };
+
+        console.log(sales.tecno); //20 if brand = tecno
+    </script>
+</body>
+</html>
