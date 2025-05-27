@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt user for object property</title>
+</head>
+<body>
+    <h2>Prompt user for property</h2>
+    <p>We need to use square brackets for this example to work</p>
+
+    <script>
+        let jumuiya = {
+            name : 'st. veronica',
+            moderator : 'ruth',
+            'number of members' : 20,
+            outstation : 'munyaka',
+        };
+        let key = prompt('What do you want to know about the Jumuiya?: ', 'name');
+        //access the variable
+        console.log(jumuiya[key]);
+    </script>
+</body>
+</html>
