@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordering </title>
+</head>
+<body>
+    <h1>Ordering while looping through properties</h1>
+
+    <script>
+        let codes = {
+            //putting the + here enables the codes to be ordered based on how they were added otherwise they would be ordered from the smallest code to the largest.
+            '+254': 'Kenya',
+            '+255': 'Tanzania',
+            '+1': 'United States',
+            '+256': 'Uganda',
+        };
+
+        for(code in codes){
+            console.log(codes[code]); //country
+            console.log(code); //country code
+        }
+    </script>
+</body>
+</html>

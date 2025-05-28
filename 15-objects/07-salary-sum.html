@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition Example</title>
+</head>
+<body>
+    <h1>Add object values <i>Salaries</i></h1>
+
+    <script>
+        let salaries = {
+            geoffrey: 160,
+            ruth: 130,
+            zachary: 100,
+        };
+
+        let total = 0;
+        for(salary in salaries){
+            total += salaries[salary];
+        };
+
+        console.log(total);
+    </script>
+</body>
+</html>

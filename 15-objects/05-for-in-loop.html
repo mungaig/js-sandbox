@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop through Object</title>
+</head>
+<body>
+    <h1>Loop through object using <i>for...in </i>loop</h1>
+
+    <script>
+        const organization = {
+          name: 'bofta technology',
+          industry: 'IT',
+          'no. of staff': 50,
+          clients: 70,
+          location: 'Nairobi, Kenya',
+        };
+
+        //for prop in object
+        for(key in organization){
+            console.log(key);
+            console.log(organization[key]);
+        };
+    </script>
+</body>
+</html>
