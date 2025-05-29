@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call a Constructor using new</title>
+</head>
+<body>
+    <h1>Calling Constructor using <i>new</i></h1>
+    <p>Neat way of doing it as compared to 14-object-constructor-fun.html</p>
+    
+    <script>
+        //constructors by convention start with a capital
+        function Person(name){
+            this.name = name;
+            this.introduceSelf = function() {
+                console.log(`Hi, I'm ${this.name}`);
+            }
+        };
+
+        const newPerson = prompt('Enter the user\'s name:', 'Daisy');
+        const guestName = new Person(newPerson);
+        guestName.introduceSelf();
+    </script>
+</body>
+</html> 
