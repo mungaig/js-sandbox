@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this keyword</title>
+</head>
+<body>
+    <h1>Illustrating the use of <i>this</i> keyword</h1>
+    
+    <script>
+        //this - keyword typically refers to the current object the code is being executed in
+        let personOne = {
+            name: 'Ruth',
+            introduceSelf() {
+                console.log(`Hi my name is ${this.name}`);
+            },
+        };
+
+        let personTwo = {
+            name: 'Geoffrey',
+            introduceSelf() {
+                console.log(`And my name is ${this.name}`);
+            },
+        };
+        
+        personOne.introduceSelf();
+        personTwo.introduceSelf();
+
+    </script>
+</body>
+</html>

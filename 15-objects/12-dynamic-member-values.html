@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic member values</title>
+</head>
+<body>
+    <h1>Set member values dynamically using bracket notation <i>[]</i></h1>
+    <script>
+        let candidate = {};
+        const myDataName = 'score';
+        const myDataValue = '78';
+
+        //this can't be achieved with the dot notation
+        candidate[myDataName] = myDataValue;
+
+        console.log(candidate);
+    </script>
+</body>
+</html>

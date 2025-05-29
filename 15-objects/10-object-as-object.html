@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects as object properties</title>
+</head>
+<body>
+    <h1>Objects as object properties</h1>
+    <script>
+        let county = {
+            name: 'Kiambu',
+            population: 2000000,
+            headquarters: 'Kiambu town',
+            towns: ['Thika','Limuru','Wangige','Kikuyu','Banana','Rwaka'],
+            governor: {
+                salutation: 'Dr.',
+                name: 'Kimani Wamatangi',
+                age: 65,
+                'education level': 'PHD',
+            },
+        };
+
+        console.log(county.governor.salutation + county.governor.name);
+
+        //using square bracket notation
+        console.log(county['governor']['education level']);
+    </script>
+</body>
+</html>
