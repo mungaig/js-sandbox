@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETCH-A-SKETCH</title>
+    <link rel="stylesheet" href="sketch.css">
+   
+</head>
+<body>
+    <div id="mainContainer" class="container">
+        <h1>ETCH-A-SKETCH</h1>
+        <div class="gridSize">
+            <label for="gridInput">New Grid Size</label>
+            <input type="number"id="gridInput"value=16>
+            <button id="submitId"class="submitBtn">submit</button>
+        </div>
+        <div class="colorSelection">
+            <div class="colorOption">
+                <input type="radio"name="colorgroup"value="black" id="blackId" checked>
+                <label for="colorgroup">Black</label>
+            </div>
+            <div class="colorOption">
+                <input type="radio" value="red" name="colorgroup"id="redId">
+                <label for="colorgroup">Red</label>
+            </div>
+            <div class="colorOption">
+                <input type="radio" value="blue" name="colorgroup"id="blueId">
+                <label for="colorgroup">blue</label>
+            </div>
+            <div class="colorOption">
+                <input type="radio" value="Green" name="colorgroup"id="greenId">
+                <label for="colorgroup">Green</label>
+            </div>
+            <button id="clearBtn"class="clearBtn">clear</button>
+        </div>
+        <div id="gridId"></div>
+    </div>
+     <script id="index.js">
+         let currentColor="black";
+        let isMouseDown=false;
+
+        //get selected color
+        function getSelectedColor(){
+            const selectedColor=document.querySelector('input[name="colorgroup"]:checked');
+            return selectedColor?selectedColor.value:"black"
+        }
+
+        //updating current color with with radio button changes
+        document.querySelectorAll('input[name="colorgroup"]').forEach(radio=>{
+            radio.addEventListener('change',()=>{
+                currentColor=getSelectedColor();
+            })
+        }) 
+
+        //function of creating squares
+        function createGrid(size){
+            const grid=document.getElementById('gridId');
+            grid.innerHTML='';
+
+            const containerSize=400;
+            const squareSize=(containerSize/size);
+
+            grid.style.width=`${containerSize}px`;
+            grid.style.height=`${containerSize}px`;
+
+            for(let i=0; i<size*size; i++){
+                const squares=document.createElement('div');
+                squares.classList.add('groupSquares');
+                squares.style.width=`${squareSize}px`;
+                squares.style.height=`${squareSize}px`;
+                grid.appendChild(squares);
+
+                squares.addEventListener('mouseover',()=>{
+                        squares.style.backgroundColor=currentColor
+                })    
+            }
+        }
+        const submitBtn=document.getElementById('submitId');
+        submitBtn.addEventListener('click',function(){
+            const gridInput=document.getElementById('gridInput');
+            let size=parseInt(gridInput.value);
+
+            if(size<1||size>100){
+                alert("The size should be between 1 and 100");
+                return
+            }
+            createGrid(size);
+        })
+
+        document.getElementById('clearBtn').addEventListener('click',()=>{
+            const squares=document.querySelectorAll('.groupSquares')
+            squares.forEach(square=>{
+                square.style.backgroundColor="";
+
+            })
+        })
+
+
+   
+createGrid(16);
+
+     </script>
+</body>
+
+</html>
