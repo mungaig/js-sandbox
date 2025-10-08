@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping through an array</title>
+</head>
+<body>
+   <h1>Looping array elements</h1> 
+   <div id="demo"></div>
+   <script>
+    const animals = ['cat','dog','cow','donkey','pig'];
+    let animalsLength = animals.length;
+    let text = '<ul>';
+    for(let i = 0; i < animalsLength; i++){
+        text += '<li>' + animals[i] + '</li>';
+    }
+    text += '</ul>';
+
+    document.getElementById('demo').innerHTML = text;
+   </script>
+</body>
+</html>

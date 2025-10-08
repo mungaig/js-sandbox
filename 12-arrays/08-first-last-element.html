@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get the first and last element of an array</title>
+</head>
+<body>
+    <h1>Access the first and last element of an array</h1>
+    <p id="whole"></p>
+    <p id="first"></p>
+    <p id="last"></p>
+    <script>
+        const languages = ['English','Swahili','Chinese','Spanish','Japanese','Kikuyu'];
+        //display whole array
+        document.getElementById('whole').innerHTML = languages;
+        //first array element
+        document.getElementById('first').innerHTML = `the first element is: ${languages[0]}`;
+        //last array element
+        document.getElementById('last').innerHTML = `the last element is ${languages[languages.length - 1]}`;
+    </script>
+</body>
+</html>

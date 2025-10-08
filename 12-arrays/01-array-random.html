@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Random</title>
+</head>
+<body>
+    <h1>Choose a random item in an array</h1>
+    <script>
+        //Arrays are mostly declared using the const keyword
+        const languages = ['python', 'JavaScript', 'Java', 'C#'];
+
+        let myLanguage = languages[Math.floor(Math.random() * languages.length)];
+        console.log(myLanguage);
+        console.log(languages.length);
+        console.log(Math.random());
+        console.log(Math.random() * languages.length);
+    </script>
+</body>
+</html>

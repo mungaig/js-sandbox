@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array push method</title>
+</head>
+<body>
+    <h1>Adding elements to an array using <i>push()</i> method</h1>
+    <p id="before"></p>
+    <p id="push"></p>
+    <p id="after"></p>
+    <script>
+        const snacks = ['popcorn','cookies','crisps','peanuts'];
+        document.getElementById('before').innerHTML = snacks.join(' '); //join method & adding spaces
+        //returns the length of array when element is added (5)
+        document.getElementById('push').innerHTML = snacks.push('cupcake');
+        //after
+        document.getElementById('after').innerHTML = snacks.join(' ');
+    </script>
+</body>
+</html>

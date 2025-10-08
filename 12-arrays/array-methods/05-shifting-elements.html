@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shifting array elements</title>
+</head>
+<body>
+    <h1>Shifting array elements</h1>
+    <p>shift() method removes the first array element and 'shifts' all other elements to a lower index</p>
+    <p>Works similar to pop(): but removes element at the start of the array</p>
+    <p id="before"></p>
+    <p id="shifted"></p>
+    <p id="after"></p>
+    <script>
+        const religion = ['christianity','buddist','islam','traditional'];
+        document.getElementById('before').innerHTML = 'before: ' + religion.join(' ');
+        document.getElementById('shifted').innerHTML = 'shifted: ' + religion.shift();
+        document.getElementById('after').innerHTML = 'after: ' + religion.join(' ');
+    </script>
+</body>
+</html>

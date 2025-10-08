@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searching an Array</title>
+</head>
+<body>
+    <h1>Searching an array: indexOf, lastIndexOf and includes</h1>
+
+    <script>
+        myArr = ['kitchen',4,'Metal','Potato',56,'Metal','School',true];
+
+        console.log(myArr.indexOf(56)); //4 
+        console.log(myArr.lastIndexOf('Metal')); //5
+        console.log(myArr.indexOf('Bull')); //-1 meaning doesn't exist
+        console.log(myArr.indexOf(true)); 
+        //NB index uses === strict equality
+
+        console.log(myArr.includes('Potato')); //true
+        console.log(myArr.includes(NaN)); //false includes correctly handles NaN unlike indexOf
+    </script>
+</body>
+</html>

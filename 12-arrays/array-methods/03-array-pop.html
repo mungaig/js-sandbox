@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array pop</title>
+</head>
+<body>
+    <h1>JavaScript Array pop() : remove array item</h1>
+    <p id="before"></p>
+    <p id="poped"></p>
+    <p id="after"></p>
+    <script>
+        const pets = ['pig','cat','snake','chihuahua','parrot'];
+        document.getElementById('before').innerHTML = 'before: ' + pets;
+        document.getElementById('poped').innerHTML = 'popped item: ' + pets.pop();
+        document.getElementById('after').innerHTML = 'after: ' + pets;
+    </script>
+</body>
+</html>

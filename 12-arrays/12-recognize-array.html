@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recognizing an array</title>
+</head>
+<body>
+    <h1>How to recognize an array</h1>
+    <p id="typeof"></p>
+    <p id="is-array"></p>
+    <p id="instanceof"></p>
+    <script>
+        const items = ['candle', 'jug', 'TV', 'book'];
+        //returns object
+        document.getElementById('typeof').innerHTML = typeof items;
+        //returns true
+        document.getElementById('is-array').innerHTML = Array.isArray(items);
+        //returns true
+        document.getElementById('instanceof').innerHTML = items instanceof Array;
+    </script>
+</body>
+</html>

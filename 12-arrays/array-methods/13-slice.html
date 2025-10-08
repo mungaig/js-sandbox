@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScrit Array Slice()</title>
+</head>
+<body>
+    <h1>JavaScrit Array Slice()</h1>
+    <p>The slice() method slices out a piece of an array into a new array.</p>
+    <p id="original"></p>
+    <p id="sliced"></p>
+    
+    <script>
+        const spirits = ['viceroy','gilbeys','lawson','hunters','jameson'];
+        document.getElementById('original').innerHTML = 'original: ' + spirits;
+        //slice() creates a new string
+        //if only one argument is provided slice() method slices out the rest of the string
+        const inStock = spirits.slice(1);
+        document.getElementById('sliced').innerHTML = 'new: ' + inStock;
+    </script>
+</body>
+</html>

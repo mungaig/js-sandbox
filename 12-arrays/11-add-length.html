@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding array element</title>
+</head>
+<body>
+    <h1>Adding array element using length property</h1>
+    <p id="before"></p>
+    <p id="after"></p>
+    <script>
+        const ingredients = ['salt', 'sugar','floor','baking powder'];
+        document.getElementById('before').innerHTML = 'before: ' + ingredients;
+        //remember the index of the item in an array is ingredients.length - 1 since index starts from 0
+        ingredients[ingredients.length] = 'eggs';
+        document.getElementById('after').innerHTML = 'after: ' + ingredients;
+    </script>
+</body>
+</html>

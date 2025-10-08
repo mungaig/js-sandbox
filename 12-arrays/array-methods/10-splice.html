@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array Splice()</title>
+</head>
+<body>
+    <h1>JavaScript Array Splice</h1>
+    <p>The <i>splice() method can be used to add new items to an array</i></p>
+    <p id="items"></p>
+    <script>
+        const stationery = ['book','pen','ruler','staples'];
+        stationery.splice(2, 0, 'rubber','clips');
+        //the first parameter (2) defines the position where new elements should be added (spliced in).
+        //the second parameter (0) defines how many elements should be removed
+
+        document.getElementById('items').innerHTML = stationery;
+    </script>
+</body>
+</html>

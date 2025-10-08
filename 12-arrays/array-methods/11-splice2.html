@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Splice example</title>
+</head>
+<body>
+    <h1>JavaScript Splice Example 2</h1>
+    <p id="before"></p>
+    <p id="removed"></p>
+    <p id="after"></p>
+    <script>
+        const places = ['kilimani','kileleshwa','hurringam','lavington','springvalley'];
+        document.getElementById('before').innerHTML = 'before: ' + places.join(' ');
+        const replaced = places.splice(2, 2, 'kabete','wangige');
+        document.getElementById('removed').innerHTML = 'areas removed: ' + replaced;
+        document.getElementById('after').innerHTML = 'after: ' + places.join(' ');
+    </script>
+</body>
+</html>

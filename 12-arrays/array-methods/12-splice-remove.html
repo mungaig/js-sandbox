@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Removing elements using splice method</title>
+</head>
+<body>
+    <h1>Removing elements using splice method</h1>
+    <p id="before"></p>
+    <p id="removed"></p>
+    <p id="after"></p>
+    <script>
+        const churches = ['ACK','PCEA','Catholic','AIC'];
+        document.getElementById('before').innerHTML = churches;
+        //better way to remove element than delete() which leaves undefined holes in array
+        //0 -> position, 1 -> number of elements to be removed from array
+        document.getElementById('removed').innerHTML = churches.splice(0, 1);
+        document.getElementById('after').innerHTML = churches;
+    </script>
+</body>
+</html>
