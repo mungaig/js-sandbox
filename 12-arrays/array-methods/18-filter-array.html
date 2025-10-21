@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter array</title>
+</head>
+<body>
+    <h1>filter method returns an array of matching items</h1>
+
+    <script>
+        let students = [
+            {id: 1, name: 'Ruth'},
+            {id: 2, name: 'Reggy'},
+            {id: 3, name: 'Shosh'},
+            {id: 4, name: 'Peter'},
+            {id: 5, name: 'tony'},
+            {id: 6, name: 'Shosh'}
+        ];
+
+        let firstBatch = students.filter(item => item.id < 3);
+        console.log(firstBatch);
+
+        let namedShosh = students.filter(item => item.name == 'Shosh');
+        console.log(namedShosh);
+    </script>
+</body>
+</html> 

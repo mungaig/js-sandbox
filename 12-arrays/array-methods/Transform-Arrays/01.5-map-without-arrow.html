@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map</title>
+</head>
+<body>
+    <h1><i>Arr.map()</i> method calls a function for each item in an array and returns the results</h1>
+
+    <script>
+            // let result = arr.map(function(item, index, array) {
+            // // returns the new value instead of item
+            // });
+
+    function getLength(string){
+        return string.length;
+    };
+
+    let names = ['agnes','angela','philomena','patrick','paul'];
+    let lengths = names.map(getLength);
+    console.log(lengths);
+    </script>
+</body>
+</html>
