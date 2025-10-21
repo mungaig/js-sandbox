@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find, findIndex / findLastIndexOf</title>
+</head>
+<body>
+    <h1>find, findIndex / findLastIndexOf</h1>
+    <p><b>arr.find(fn)</b> method helps find objects in array of objects with a specific condition</p>
+
+    <script>
+        // let result = arr.find(function(item, index, array) {
+            // if true is returned, item is returned and iteration is stopped
+             // for falsy scenario returns undefined
+        // });
+        
+        let users = [
+            {id: 1, name: 'Geoffrey'},
+            {id: 2, name: 'Tom'},
+            {id: 3, name: 'Oburu'},
+            {id: 4, name: 'James'},
+            {id: 5, name: 'Tom'}
+        ];
+
+        let user = users.find(item => item.id == 1);  // for find method item => item.id == 1 with one argument is typical, other arguments of this function are rarely used.
+        console.log(user.name);
+       
+        let indexOfTom = users.findIndex(item => item.name == 'Tom');
+        console.log(indexOfTom);// 1 - first index of Tom - searches from left to right
+
+        let lastIndexOfTom = users.findLastIndex(item => item.name == 'Tom');
+        console.log(lastIndexOfTom);// 4 - searches from right to left
+
+
+    </script>
+</body>
+</html>
