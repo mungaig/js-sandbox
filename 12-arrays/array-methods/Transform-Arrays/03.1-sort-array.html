@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Array correctly</title>
+</head>
+<body>
+    <h1>Supplying a function to <i>sort()</i> to get it to work correctly</h1>
+
+    <script>
+        function compareItems(a,b){
+            if(a > b) return 1;
+            if(a == b) return 0;
+            if(a < b) return -1;
+        };
+
+        let myArr = [2, 15, 37, 7];
+        
+        myArr.sort(compareItems);
+
+        console.log(myArr);
+    </script>
+</body>
+</html>

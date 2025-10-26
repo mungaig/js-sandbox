@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>supply a sorting function</title>
+</head>
+<body>
+    <h1>Supplying a sorting function</h1>
+
+    <script>
+        let arr = [6, 17, 9, 67];
+
+        // arr.sort(function(a,b) {
+        //     console.log(a + '<>' + b);
+        //     return a - b;
+        // });        
+
+        arr.sort((a,b) => a -b); //arrow functions are neater
+
+        console.log(arr);
+
+        // The arr.sort(fn) method implements a generic sorting algorithm. We don’t need to care how it internally works (an optimized quicksort or Timsort most of the time). It will walk the array, compare its elements using the provided function and reorder them, all we need is to provide the fn which does the comparison.
+
+    </script>
+</body>
+</html>
