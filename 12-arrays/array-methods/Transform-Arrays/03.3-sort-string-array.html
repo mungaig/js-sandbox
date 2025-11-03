@@ -7,5 +7,13 @@
 </head>
 <body>
     <h1>Sorting String Arrays with <i>localeCompare</i></h1>
+
+    <script>
+        let userNames = ['Kambo', 'bofta', 'Githee','Alejandro','Mkuu'];
+
+        console.log(userNames.sort((a,b) => a > b ? 1 : -1)); //wrong: Alejandro, Githee, Kambo, Mkuu, bofta
+
+        console.log(userNames.sort((a,b) => a.localeCompare(b))); //Correct: Alejandro, bofta, Githee, Kambo, Mkuu
+    </script>
 </body>
 </html>
