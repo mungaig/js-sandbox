@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>reduce() & reduceRight()</h1>
+        <!-- from: https://javascript.info/array-methods#reduce-reduceright -->
+
+    <script>
+        // let value = arr.reduce(function(accumulator, item, index, array) {
+        // ...
+        // }, [initial]);
+
+        let arr = [1, 2, 3 , 4, 5];
+        let result = arr.reduce((sum, current) => sum + current, 0);
+        console.log(result);
+
+        //reduceRight() does the same thing but starting from right to left
+    </script>
+</body>
+</html>
